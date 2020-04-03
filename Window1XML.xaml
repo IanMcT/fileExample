@@ -1,0 +1,25 @@
+﻿<!--
+    Ian McTavish
+    March 3, 2020
+    Binary Window class
+    -->
+    <Window x:Class="fileExample.Window1XML"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fileExample"
+        mc:Ignorable="d"
+        Title="Window1XML" Height="300" Width="300">
+    <!--Same setup as WindowText file-->
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem x:Name="menuOpen" Click="menuOpen_Click" Header="_Open"></MenuItem>
+            <MenuItem x:Name="menuSave" Click="menuSave_Click" Header="_Save"></MenuItem>
+            <MenuItem x:Name="menuClose" Click="menuClose_Click" Header="_Close"></MenuItem>
+        </Menu>
+        <Grid Margin="10">
+            <DataGrid Name="dgSimple" CanUserDeleteRows="True"></DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>
